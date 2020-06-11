@@ -76,29 +76,32 @@
                 <div class="navbar-header">
                 </div>
                 <nav class="collapse navbar-collapse bs-navbar-collapse" role="navigation" style="height: 0px;">
-                    <ul id="menu-menu-menu" class="nav navbar-nav"><li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-31677"><a href="http://launch.tronbuilder.com/themes">Home</a></li>
+                    <ul id="menu-menu-menu" class="nav navbar-nav"><li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-31677"><a href="/">Home</a></li>
                         <li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-37927"><a href="#pricing">Features</a></li>
                         <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-35020"><a href="https://tronbuilder.com/pro/">Pricing</a></li>
                         <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-35041"><a href="https://tronbuilder.com/support/">Reviews</a></li>
                         <li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children dropdown menu-item-40877"><a class="dropdown-toggle" href="#">FAQ<b class="caret"></b></a>
 
-                        @if (Route::has('login'))
-                            <div class="top-right links">
-                                @auth
-                                    <a href="{{ url('/home') }}">Home</a>
-                                @else
-                                    <a href="{{ route('login') }}">Login</a>
-                                    <a href="{{ route('register') }}">Register</a>
-                                @endauth
-                            </div>
-                        @endif
+
                         
                         <!-- <ul class="dropdown-menu">
                             <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-40878"><a href="https://tronbuilder.com/photoshop/">Online PhotoShop</a></li>
                             <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-40879"><a href="https://tronbuilder.com/apps/">App Maker (Beta)</a></li>
                         </ul>
+                        </li> -->
+                        <li class="th-accent menu-item menu-item-type-custom menu-item-object-custom menu-item-31777" style="display:flex;    border-color: #29cb97;">
+                            @if (Route::has('login'))
+
+                                @auth
+                                    <a href="{{ url('/home') }}">Home</a>
+                                @else
+                                    <a href="{{ route('login') }}" style="margin-right:10px;"> Login  </a>
+                                    
+                                    <a href="{{ route('register') }}">Register</a>
+                                @endauth
+
+                            @endif
                         </li>
-                        <li class="th-accent menu-item menu-item-type-custom menu-item-object-custom menu-item-31777"><a href="http://launch.tronbuilder.com">Launch TronBuilder</a></li> -->
                     </ul>        
                 </nav>
             </div>

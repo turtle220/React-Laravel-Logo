@@ -10,8 +10,9 @@ const EnterBusinessName = (props) => {
         dispatch({type: 'SET_LOGOBUSINESSNAME', value: logoBusinessName })
         props.history.push('/wizard/enterSlogan');
     }
-    return <div>
+    return <div class="form-control">
         <input type='text' value={logoBusinessName}  onChange={(e)=>setLogoBusinessName(e.target.value)} placeholder='Enter business name'/>
+        &nbsp;&nbsp;&nbsp;
         <input type='button' onClick={()=>onNext()} value='Next'/>
     </div>
 }

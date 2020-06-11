@@ -14,6 +14,17 @@
 Route::get('/', function () {
 	return view('welcome');
 });
+Route::get('/wizard/enterLogoName', function () {
+	return view('welcome');
+});
+
+Route::get('/wizard/enterBusinessName', function () {
+	return view('welcome');
+});
+
+Route::get('/wizard/enterSlogan', function () {
+	return view('welcome');
+});
 
 Auth::routes();
 
