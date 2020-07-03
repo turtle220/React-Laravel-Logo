@@ -12,9 +12,9 @@
         <script src="{{ asset('js/app.js') }}" defer></script>
 
         <link href="{{ asset('css/nav.css') }}" rel="stylesheet">
+
         <!-- Fonts -->
         <link href="https://fonts.googleapis.com/css?family=Raleway:100,600" rel="stylesheet" type="text/css">
-
         <!-- Styles -->
         <style>
             html, body {
@@ -82,8 +82,6 @@
                         <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-35041"><a href="https://tronbuilder.com/support/">Reviews</a></li>
                         <li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children dropdown menu-item-40877"><a class="dropdown-toggle" href="#">FAQ<b class="caret"></b></a>
 
-
-                        
                         <!-- <ul class="dropdown-menu">
                             <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-40878"><a href="https://tronbuilder.com/photoshop/">Online PhotoShop</a></li>
                             <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-40879"><a href="https://tronbuilder.com/apps/">App Maker (Beta)</a></li>
@@ -117,5 +115,6 @@
                 </div>
             </div>
         </div>
+
     </body>
 </html>
